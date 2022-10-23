@@ -9,42 +9,73 @@
     <title>Meu Perfil</title>
 </head>
 <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MIRU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../perfil/Perfil.html">Perfil</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../Fila/fila.html">Situação da Fila</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Navbar text with an inline element
+            </span> -->
+            </div>
+        </div>
+    </nav> -->
+          
     <div id="conteudo">
         
         <h1>Alterar Dados</h1>
 
         <div id="text_foto_dado">
-            <p>Alterar do Perfil</p>
-            <p>Informe os dados que deseja alterar:</p>
+            <p id="fotoDoPerfil">Altere Fotos do Perfil e os dados:</p>
+            <!-- <p id="dadosDeCadastro">Dados de Cadastro:</p> -->
         </div>
 
-        <div id="form_img">
-
-            <img src="../src/img/perfil.png" alt="foto de perfil">
-
+        <div id="form_img">     
             <form>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Nome</span>
-                    <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" >
+                <div id="imgAndInput">
+                    <img src="../src/img/perfil.png" alt="foto de perfil">
+                    
+                    <div id='imgFile' class="mb-3">
+                        <label for="formFile" class="form-label"></label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
                 </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Email</span>
-                    <input type="email" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" >
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1">Telefone</span>
-                    <input type="tel" class="form-control" aria-label="Username" aria-describedby="basic-addon1" >
-                </div>
-                <div class="mb-3">
-                    <label for="formFile" class="form-label"></label>
-                    <input id="alterarFoto" class="form-control" type="file" id="formFile">
+                <div id='dados'>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Nome</span>
+                        <input type="text" class="form-control" placeholder="João" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Email</span>
+                        <input type="email" class="form-control" placeholder="joao@email.com" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Telefone</span>
+                        <input type="tel" class="form-control" placeholder="98888-3333" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
                 </div>
             </form>
         </div>
 
         <div id="button">
             <button type="button" class="btn btn-light" onclick="window.location.href = 'Perfil.html'">Voltar</button>
-            <button type="button" class="btn btn-light">Confirmar!</button>
+            <button type="button" class="btn btn-light" onclick="window.location.href = '#'">Confirmar</button>
         </div>
 
     </div>
