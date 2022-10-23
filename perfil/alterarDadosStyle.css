@@ -1,12 +1,11 @@
-body, html {
+ body, html {
     margin: 0px;
     padding: 0px;
     width: 100vw;
     display: flex;
-    justify-content: center;
-    /* background-color: rgb(33,37,41); */
+    flex-direction: column;
     background-image: linear-gradient(to right, #270a33, #37113f, #47194a, #592055, #6b2860);
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 #conteudo {
@@ -14,7 +13,6 @@ body, html {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    width: 90vw;
 }
 
 #text_foto_dado {
@@ -70,14 +68,7 @@ form {
     justify-content: center;
 }
 
-button {
-    margin: 40px;
-}
-
 #imgFile {
-    /* position: absolute; */
-    /* left: 140px;
-    top: 425px; */
     width: 210px;
 }
 
@@ -89,6 +80,10 @@ button {
     text-align: center;
 }
 
+.ajuste {
+    margin: 20px 30px 20px 30px;
+}
+
 @media (max-width: 900px) {
     #form_img {
         flex-direction: column;
@@ -97,14 +92,11 @@ button {
     }
 
     img {
-        /* border-radius: 200px; */
-        /* margin-right: 70px; */
-        /* margin-top: 20px; */
-        /* margin-left: 25vw; */
         margin: 0px 0px 50px 0px;
         height: 150px;
         width: 150px;
     }
+
     form {
         flex-direction: column;
         width: 80vw;
@@ -130,7 +122,6 @@ button {
         position: static;
         flex-direction: column;
         align-items: center;
-        /* margin-top: 100px; */
         margin: 100px 0px 0px 0px;
     }
 
